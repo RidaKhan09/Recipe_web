@@ -1,10 +1,7 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0; /* remove padding if it's not needed */
+  
 }
-
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -26,6 +23,24 @@
     transform: rotate(360deg);
   }
 }
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-start infinite;
+}
+@keyframes loading-bar {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.animate-loading-bar {
+  animation: loading-bar 2s linear infinite;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
