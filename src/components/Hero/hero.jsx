@@ -4,9 +4,9 @@ import userAvatar from '../../assets/userAvatar.jpg'
 
 const Hero = () => {
   return (
-    <section className="rrelative w-full bg-gradient-to-r from-white via-white to-[#FFD4D0] pt-40 py-16 overflow-hidden">
+    <section className="relative w-full bg-gradient-to-r from-white via-white to-[#FFD4D0] pt-40 py-16 overflow-hidden">
       {/* Curved SVG Background */}
-       <div className="absolute right-0 top-0 h-full w-1/2">
+      <div className="absolute right-0 top-0 h-full w-1/2">
         <svg
           viewBox="0 0 500 1000"
           preserveAspectRatio="none"
@@ -22,23 +22,23 @@ const Hero = () => {
       <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row items-center px-6 lg:px-10 relative z-10">
         {/* Left Text */}
         <div className="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
-          <h1 className="text-5xl font-bold mb-6 leading-snug">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-snug">
             Your Daily Dish,
             <br />
             A <span className="text-[#C46C5F]">Food</span> Journey
           </h1>
-          <p className="text-gray-600 text-lg mb-8">
+          <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
             Maecenas vitae enim pharetra, venenatis nunc eget,<br />
             finibus est.
           </p>
-          <button className="px-8 py-3 bg-[#C46C5F] text-white font-semibold rounded-md hover:bg-[#b1584e] transition">
+          <button className="px-6 sm:px-8 py-2 sm:py-3 bg-[#C46C5F] text-white font-semibold rounded-md hover:bg-[#b1584e] transition">
             Sign up
           </button>
         </div>
 
         {/* Right Image + Testimonial */}
-        <div className="lg:w-1/2 relative">
+        <div className="hidden md:block lg:w-1/2 relative">
           {/* Food Image */}
           <img
             src={foodImg}
