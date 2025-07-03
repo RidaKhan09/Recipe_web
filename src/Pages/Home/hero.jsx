@@ -19,7 +19,7 @@ const Hero = () => {
         </svg>
       </div>
 
-      <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row items-center px-6 lg:px-10 relative z-10">
+      <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row items-center px-4 sm:px-6 lg:px-10 relative z-10 translate-x-8">
         {/* Left Text */}
         <div className="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-snug">
@@ -38,7 +38,7 @@ const Hero = () => {
         </div>
 
         {/* Right Image + Testimonial */}
-        <div className="hidden md:block lg:w-1/2 relative">
+        <div className="hidden md:block lg:w-1/2 relative translate-x-6">
           {/* Food Image */}
           <img
             src={foodImg}

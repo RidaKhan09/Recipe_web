@@ -2,7 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import { Loadingscreen } from './components/LoadingScren'
 import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/hero'
+import Hero from './Pages/Home/hero'
+import ShareRecipe from './Pages/Home/ShareRecipe'
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -13,6 +14,7 @@ function App() {
       <div >
       <Navbar/>
       <Hero/>
+      <ShareRecipe/>
       </div>
     </>
   );

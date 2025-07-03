@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import logo from '../../assets/logo.png' // Your logo image
+import logo from '../../assets/logo.png'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-40 bg-transparent ">
-      <div className="max-w-[1400px] w-full mx-auto flex items-center justify-between px-6 lg:px-10 py-4">
+    <nav className="w-full mt-4 px-4 sm:px-6 lg:px-10 fixed top-0 left-0 z-40">
+      <div className="max-w-[1400px] w-full mx-auto flex items-center justify-between py-4 bg-transparent backdrop-blur-md rounded-xl  px-4 lg:px-8">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <img src={logo} alt="Perfect Recipe Logo" className="h-6 w-6 object-contain" />
@@ -27,10 +27,10 @@ const Navbar = () => {
 
         {/* Desktop Auth Buttons */}
         <div className="hidden lg:flex items-center space-x-3">
-          <button className="px-4 py-2 bg-[#F2F2F2] text-black font-medium rounded-md focus:outline-none">
+          <button className="px-4 py-2 bg-[#F2F2F2] text-black font-medium rounded-md">
             Log in
           </button>
-          <button className="px-4 py-2 bg-[#C46C5F] text-white font-medium rounded-md focus:outline-none">
+          <button className="px-4 py-2 bg-[#C46C5F] text-white font-medium rounded-md">
             Sign up
           </button>
         </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-white shadow-md px-6 pt-4 pb-6 space-y-4">
+        <div className="lg:hidden bg-white shadow-md rounded-xl mx-4 mt-2 px-6 pt-4 pb-6 space-y-4">
           <ul className="space-y-3 font-medium text-black">
             <li><a href="#" className="block hover:text-[#C46C5F]">Home</a></li>
             <li><a href="#" className="block hover:text-[#C46C5F]">Recipe</a></li>
@@ -60,10 +60,10 @@ const Navbar = () => {
           </ul>
 
           <div className="pt-4 flex flex-col space-y-3">
-            <button className="w-full px-4 py-2 bg-[#F2F2F2] text-black font-medium rounded-md focus:outline-none">
+            <button className="w-full px-4 py-2 bg-[#F2F2F2] text-black font-medium rounded-md">
               Log in
             </button>
-            <button className="w-full px-4 py-2 bg-[#C46C5F] text-white font-medium rounded-md focus:outline-none">
+            <button className="w-full px-4 py-2 bg-[#C46C5F] text-white font-medium rounded-md">
               Sign up
             </button>
           </div>
