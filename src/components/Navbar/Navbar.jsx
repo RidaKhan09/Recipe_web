@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full mt-4 px-4 sm:px-6 lg:px-10 fixed top-0 left-0 z-40">
-      <div className="max-w-[1400px] w-full mx-auto flex items-center justify-between py-4 bg-transparent backdrop-blur-md rounded-xl  px-4 lg:px-8">
+      <div className="max-w-[1400px] w-full mx-auto flex items-center justify-between py-4 bg-transparent  rounded-xl  px-4 lg:px-8">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <img src={logo} alt="Perfect Recipe Logo" className="h-6 w-6 object-contain" />
