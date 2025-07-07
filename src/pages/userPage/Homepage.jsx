@@ -1,12 +1,11 @@
 
-import Hero from '../../components/userHome/Hero'
-import ShareRecipe from '../../components/userHome/ShareRecipe'
-import TrendingRecipe from '../../components/UserHome/TrendingRecipe'
-import Blog from '../../components/userHome/Blog'
-import Explore_Recipe from '../../components/userHome/Explore_Recipe'
-import Newsletter from '../../components/userHome/Newsletter'
-import PopularCategories from '../../components/userHome/PopularCategories'
-
+import Hero from '../../components/user/userHome/Hero'
+import ShareRecipe from '../../components/user/userHome/ShareRecipe'
+import TrendingRecipe from '../../components/user/UserHome/TrendingRecipe'
+import Blog from '../../components/user/userHome/Blog'
+import Explore_Recipe from '../../components/user/userHome/Explore_Recipe'
+import Newsletter from '../../components/user/userHome/Newsletter'
+import PopularCategories from '../../components/user/userHome/PopularCategories'
 
 function Homepage() {
  

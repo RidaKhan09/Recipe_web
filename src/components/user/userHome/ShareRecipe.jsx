@@ -1,5 +1,6 @@
 import React from 'react'
-import shareImg from '../../assets/share-recipe.png'
+
+import shareImg from '../../../assets/share-recipe.png';
 
 const ShareRecipe = () => {
   return (

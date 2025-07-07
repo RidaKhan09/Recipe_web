@@ -1,11 +1,11 @@
 import React from "react";
-import Green_Godies from "../../assets/Green_Godies.jpg";
-import Salad from "../../assets/Salad.jpg";
-import Pizza from "../../assets/Pizza.jpg";
-import Bowl_Smothie from "../../assets/Bowl_Smothie.jpg";
-import smothie from "../../assets/smothie.jpg";
-import Snapper from "../../assets/Snapper.jpg";
-import Men from "../../assets/Men.jpg";
+import Green_Godies from "../../../assets/Green_Godies.jpg";
+import Salad from "../../../assets/Salad.jpg";
+import Pizza from "../../../assets/Pizza.jpg";
+import Bowl_Smothie from "../../../assets/Bowl_Smothie.jpg";
+import smothie from "../../../assets/smothie.jpg";
+import Snapper from "../../../assets/Snapper.jpg";
+import Men from "../../../assets/Men.jpg";
 
 // Recipe Data
 const recipes = [

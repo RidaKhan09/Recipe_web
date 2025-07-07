@@ -1,11 +1,11 @@
 import React from "react";
-import onionRings from "../../assets/onionRings.png";
-import toastTomato from "../../assets/toastTomato.png";
-import hamEgg from "../../assets/hamEgg.png";
-import chickenWrap from "../../assets/chickenWrap.png";
-import tunaSalad from "../../assets/tunaSalad.png";
-import pancake from "../../assets/pancake.png";
-import Men from "../../assets/Men.jpg";
+import onionRings from "../../../assets/onionRings.png";
+import toastTomato from "../../../assets/toastTomato.png";
+import hamEgg from "../../../assets/hamEgg.png";
+import chickenWrap from "../../../assets/chickenWrap.png";
+import tunaSalad from "../../../assets/tunaSalad.png";
+import pancake from "../../../assets/pancake.png";
+import Men from "../../../assets/Men.jpg";
 
 // Recipe Data
 const recipes = [

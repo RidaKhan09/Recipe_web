@@ -1,6 +1,7 @@
 import React from 'react'
-import foodImg from '../../assets/food.png'
-import userAvatar from '../../assets/userAvatar.jpg'
+
+import food from "../../../assets/food.png"
+import userAvatar from '../../../assets/userAvatar.jpg'
 
 const Hero = () => {
   return (
@@ -41,7 +42,7 @@ const Hero = () => {
         <div className="hidden md:block lg:w-1/2 relative translate-x-6">
           {/* Food Image */}
           <img
-            src={foodImg}
+            src={food}
             alt="Delicious Dish"
             className="relative z-20 w-full max-w-sm mx-auto rounded-2xl object-cover"
           />
