@@ -1,6 +1,6 @@
 import React from 'react';
-import clock from '../../assets/Home/Blog/clock.jpg';
-import suger from '../../assets/Home/Blog/suger.jpg';
+import clock from '../../assets/clock.jpg';
+import suger from '../../assets/suger.jpg';
 
 const BlogSection = () => {
   const blogs = [

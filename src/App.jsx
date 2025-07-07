@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import './App.css';
-import { Loadingscreen } from './components/LoadingScren';
-import Navbar from './components/Navbar/Navbar';
-import Homepage from './Pages/Home/homepage';
+import { Loadingscreen } from './components/common/LoadingScreen';
+import Navbar from './components/common/Navbar';
+import Homepage from './Pages/UserPage/homepage';
+import Footer from './components/common/Footer';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -13,9 +14,9 @@ function App() {
         <Loadingscreen onComplete={() => setIsLoaded(true)} />
       ) : (
         <>
-          <Navbar />
-    {/* padding to avoid navbar overlap */}
-            <Homepage />
+        <Navbar />
+        <Homepage />
+        <Footer/>
 
         </>
       )}

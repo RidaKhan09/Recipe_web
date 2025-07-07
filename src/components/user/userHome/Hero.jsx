@@ -1,6 +1,6 @@
 import React from 'react'
-import foodImg from '../../assets/Home/Hero/food.png'
-import userAvatar from '../../assets/Home/Hero/userAvatar.jpg'
+import foodImg from '../../assets/food.png'
+import userAvatar from '../../assets/userAvatar.jpg'
 
 const Hero = () => {
   return (
