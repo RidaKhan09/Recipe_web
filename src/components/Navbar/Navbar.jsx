@@ -1,12 +1,28 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import logo from '../../assets/logo.png'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
-    <nav className="w-full mt-4 px-4 sm:px-6 lg:px-10 fixed top-0 left-0 z-40">
-      <div className="max-w-[1400px] w-full mx-auto flex items-center justify-between py-4 bg-transparent  rounded-xl  px-4 lg:px-8">
+    <nav className={`w-full fixed top-0 left-0 z-50 px-4 sm:px-6 lg:px-10 transition-all duration-300 ${
+      scrolled ? "bg-white shadow-md" : "bg-transparent"
+    }`}>
+      <div className="max-w-[1400px] w-full mx-auto flex items-center justify-between py-4 rounded-xl px-4 lg:px-8">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <img src={logo} alt="Perfect Recipe Logo" className="h-6 w-6 object-contain" />
@@ -41,8 +57,10 @@ const Navbar = () => {
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-black focus:outline-none"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
