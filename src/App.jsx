@@ -1,10 +1,14 @@
 import { useState } from 'react';
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
+
 import { Loadingscreen } from './components/common/LoadingScreen';
 import Navbar from './components/common/Navbar';
-import Homepage from './Pages/UserPage/homepage';
 import Footer from './components/common/Footer';
+
+import Homepage from './Pages/userPage/Homepage';
+import Recipes from './pages/userPage/Recipes'
+
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -14,12 +18,16 @@ function App() {
       {!isLoaded ? (
         <Loadingscreen onComplete={() => setIsLoaded(true)} />
       ) : (
-        <>
-        <Navbar />
-        <Homepage />
-        <Footer/>
+        <Router>
+          <Navbar />
 
-        </>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/recipes" element={<Recipes />} />
+          </Routes>
+
+          <Footer />
+        </Router>
       )}
     </>
   );

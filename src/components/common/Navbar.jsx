@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import logo from '../../assets/logo.png'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -34,13 +35,14 @@ const Navbar = () => {
 
         {/* Desktop Nav Links */}
         <ul className="hidden lg:flex items-center space-x-6 font-medium text-black">
-          <li><a href="#" className="hover:text-[#C46C5F]">Home</a></li>
-          <li><a href="#" className="hover:text-[#C46C5F]">Recipe</a></li>
+        <li><Link to="/" className="hover:text-[#C46C5F]">Home</Link></li>
+        <li><Link to="/recipes" className="hover:text-[#C46C5F]">Recipe</Link></li>
+        
           <li><a href="#" className="hover:text-[#C46C5F]">Add Recipe</a></li>
           <li><a href="#" className="hover:text-[#C46C5F]">Blog</a></li>
           <li><a href="#" className="hover:text-[#C46C5F]">About us</a></li>
         </ul>
-
+       
         {/* Desktop Auth Buttons */}
         <div className="hidden lg:flex items-center space-x-3">
           <button className="px-4 py-2 bg-[#F2F2F2] text-black font-medium rounded-md">

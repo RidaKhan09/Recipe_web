@@ -1,24 +1,8 @@
 import React from 'react';
-import clock from '../../../assets/clock.jpg';
-import suger from '../../../assets/suger.jpg';
+import {Blogs} from '../../../data/index'
 
-const BlogSection = () => {
-  const blogs = [
-    {
-      id: 1,
-      title: 'Unlocking the Benefits of Intermittent Fasting for Weight Management',
-      description:
-        'Weight Management and Health Weight Management and Health Weight Management and Health Weight Management and Health.',
-      image: clock,
-    },
-    {
-      id: 2,
-      title: 'The Impact of Sugar Consumption on Your Health',
-      description:
-        'Unveiling the Hidden Dangers Unveiling the Hidden Dangers Unveiling the Hidden Dangers.',
-      image: suger,
-    },
-  ];
+const Blog = () => {
+ 
 
   return (
     <section className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-12">
@@ -35,7 +19,7 @@ const BlogSection = () => {
 
       {/* Blog Cards */}
       <div className="grid sm:grid-cols-2 gap-6">
-        {blogs.map((blog) => (
+        {Blogs.map((blog) => (
           <div
             key={blog.id}
             className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
@@ -58,4 +42,4 @@ const BlogSection = () => {
   );
 };
 
-export default BlogSection;
+export default Blog;

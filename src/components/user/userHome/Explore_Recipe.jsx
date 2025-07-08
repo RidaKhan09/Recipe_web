@@ -1,21 +1,7 @@
 import React from "react";
-import Green_Godies from "../../../assets/Green_Godies.jpg";
-import Salad from "../../../assets/Salad.jpg";
-import Pizza from "../../../assets/Pizza.jpg";
-import Bowl_Smothie from "../../../assets/Bowl_Smothie.jpg";
-import smothie from "../../../assets/smothie.jpg";
-import Snapper from "../../../assets/Snapper.jpg";
 import Men from "../../../assets/Men.jpg";
+import {Exploreecipes} from '../../../data/index'
 
-// Recipe Data
-const recipes = [
-  { id: 1, title: "Green Goodies: Veggie-Packed Power Bowl", img: Green_Godies, rating: 4, calories: 322 },
-  { id: 2, title: "Garden Fresh Salad with Herbs & Lemon Dressing", img: Salad, rating: 4, calories: 199 },
-  { id: 3, title: "Classic Cheesy Pepperoni Pizza Slice", img: Pizza, rating: 4, calories: 174 },
-  { id: 4, title: "Tropical Smoothie Bowl with Fruits & Chia", img: Bowl_Smothie, rating: 4, calories: 188 },
-  { id: 5, title: "Berry Blast Smoothie with Yogurt & Oats", img: smothie, rating: 4, calories: 298 },
-  { id: 6, title: "Grilled Snapper with Garlic Lemon Butter", img: Snapper, rating: 4, calories: 251 },
-];
 
 const author = "Alex Martin";
 const avatarFallback = Men;
@@ -94,7 +80,7 @@ const Explore_Recipe = () => {
 
       {/* Grid */}
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {recipes.map((recipe) => (
+        {Exploreecipes.map((recipe) => (
           <Recipe_Card key={recipe.id} {...recipe} />
         ))}
       </div>
