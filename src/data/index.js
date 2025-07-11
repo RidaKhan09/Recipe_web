@@ -143,3 +143,35 @@ export const Popularcategories = [
   
  export const TrendingTags = ["Vegan", "Salads", "Gluten Free", "Healthy", "Quick Meals", "Dairy Free"];
   
+
+ export const comments = [
+   {
+     id: 1,
+     name: "Sara Johnson",
+     time: "40min ago",
+     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+     comment:
+       "Wow, this Mixed Greens with Sun-Dried Tomato Dressing recipe is a flavor explosion in my mouth! very delicious.",
+     likes: 26,
+     replies: [
+       {
+         id: 11,
+         name: "Jessica Martinez",
+         time: "20min ago",
+         avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+         comment: "I agree with you, very delicious.",
+         likes: 10,
+       },
+     ],
+   },
+   {
+     id: 2,
+     name: "David Wilson",
+     time: "1hr ago",
+     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+     comment:
+       "The combination of fresh greens and the zesty sun-dried tomato dressing is a total game-changer. It’s become a staple in my weekly menu. So easy to make and so incredibly delicious!",
+     likes: 46,
+     replies: [],
+   },
+ ];
