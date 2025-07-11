@@ -36,8 +36,7 @@ const Navbar = () => {
         {/* Desktop Nav Links */}
         <ul className="hidden lg:flex items-center space-x-6 font-medium text-black">
         <li><Link to="/" className="hover:text-[#C46C5F]">Home</Link></li>
-        <li><Link to="/recipes" className="hover:text-[#C46C5F]">Recipe</Link></li>
-        
+        <li><Link to="/recipes" className="hover:text-[#C46C5F]">Recipe</Link></li>      
           <li><a href="#" className="hover:text-[#C46C5F]">Add Recipe</a></li>
           <li><a href="#" className="hover:text-[#C46C5F]">Blog</a></li>
           <li><a href="#" className="hover:text-[#C46C5F]">About us</a></li>
