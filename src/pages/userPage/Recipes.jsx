@@ -2,9 +2,7 @@ import React from "react";
 import LeftRecipeMain from "../../components/user/recipee/leftRecipePage/LeftRecipeMain";
 import RightRecipeSidebar from "../../components/user/recipee/rightRecipePage/RightRecipeSidebar";
 
-import {RecipesPage} from '../../data/index'
-import {RecipesImage} from '../../data/index'
-import {TrendingTags} from '../../data/index'
+import {RecipesPage,RecipesImage,TrendingTags} from '../../data/index'
 
 
 const Recipes = () => {

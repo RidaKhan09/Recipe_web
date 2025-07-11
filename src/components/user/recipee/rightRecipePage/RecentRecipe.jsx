@@ -18,9 +18,9 @@ const RecentRecipe = () => {
             <h4 className="text-sm font-medium text-gray-900">{title}</h4>
             <div className="flex text-xs text-gray-500 items-center gap-2 mt-1">
               <span className="flex items-center gap-1 text-[#C46C5F]">
-                {[...Array(4)].map((_, i) => (
+                {/* {[...Array(4)].map((_, i) => (
                   <FaStar key={i} />
-                ))}
+                ))} */}
                 <FaStar className="text-gray-300" />
               </span>
               <span className="flex items-center gap-1">

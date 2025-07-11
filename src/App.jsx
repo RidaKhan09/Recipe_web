@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './App.css';
-
-import { Loadingscreen } from './components/common/LoadingScreen';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
-
+import { Loadingscreen } from './components/common/LoadingScreen';
 import Homepage from './Pages/userPage/Homepage';
 import Recipes from './pages/userPage/Recipes'
+import './App.css';
+
+
 
 
 function App() {
