@@ -18,8 +18,8 @@ import suger from "../assets/suger.jpg";
 
 export const recipes = [
   { id: 1, title: "Onion Rings", img: onionRings, rating: 4, calories: 322 },
-  { id: 2, title: "Toast with Tomato, Onion, & Hummus", img: toastTomato, rating: 4, calories: 199 },
-  { id: 3, title: "Ham, Egg, and Spinach Roll-Ups", img: hamEgg, rating: 4, calories: 174 },
+  { id: 2, title: "Toast with Tomato", img: toastTomato, rating: 4, calories: 199 },
+  { id: 3, title: "Spinach Roll-Ups", img: hamEgg, rating: 4, calories: 174 },
   { id: 4, title: "Chicken Ranch Wrap", img: chickenWrap, rating: 4, calories: 188 },
   { id: 5, title: "Tuna Mex Tuna Salad", img: tunaSalad, rating: 4, calories: 298 },
   { id: 6, title: "Strawberry and Cherry pancake", img: pancake, rating: 4, calories: 251 },
